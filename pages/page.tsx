@@ -26,7 +26,7 @@ interface PageProps extends WithRouterProps {}
 class Page extends React.Component<PageProps> {
     public render() {
         return (
-            <Container>
+            <Container maxW="container.lg">
                 <Box borderRadius="lg" bg="grey" p={3} mb={6} align="center">
                     Hello, I&apos;m a software engineering student based in the
                     Netherlands!

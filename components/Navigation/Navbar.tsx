@@ -1,4 +1,4 @@
-import Logo from '../logo';
+import Logo from '../Logo';
 import NextLink from 'next/link';
 import {
     Container,
@@ -38,7 +38,7 @@ export default function Navbar(props: INavbarProps) {
             <Container
                 display="flex"
                 p={2}
-                maxW="container.ld"
+                maxW="980px"
                 wrap="wrap"
                 align="center"
                 justify="space-between"

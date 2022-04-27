@@ -2,17 +2,25 @@ import Image from 'next/image';
 import { Box, Text, LinkBox, LinkOverlay } from '@chakra-ui/react';
 import { IGridItemProps } from './GridItem';
 
+interface IPortfolioGridItemProps extends IGridItemProps {
+    imgSrc: string;
+    title: string;
+    jobType: string;
+    companyName: string;
+    startDate: string;
+    endDate: string;
+}
 export function PortfolioGridItem({
     children,
     id,
     title,
-    thumbnail,
-}: IGridItemProps) {
+    imgSrc,
+}: IPortfolioGridItemProps) {
     return (
         <Box w="100%" align="center">
             <LinkBox cursor="pointer">
                 <Image
-                    src={thumbnail}
+                    src={imgSrc}
                     alt={title}
                     className="grid-item-thumbnail"
                     placeholder="blur"

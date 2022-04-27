@@ -5,11 +5,11 @@ import Paragraph from '../components/paragraph';
 export default class About extends React.Component {
     public render() {
         return (
-            <Container>
+            <Container maxW="container.lg">
+                {' '}
                 <Heading as="h3" variant="section-title">
                     About me
                 </Heading>
-
                 <Paragraph>
                     Currently I am pursuing my Bachelor's degree in Software
                     Engineering from Fontys University of Applied Sciences. I

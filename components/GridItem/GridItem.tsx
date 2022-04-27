@@ -4,17 +4,17 @@ import { Global } from '@emotion/react';
 
 export interface IGridItemProps {
     children: React.ReactNode;
-    id: string;
-    href: string;
-    title: string;
-    thumbnail: string;
+    id?: string;
+    href?: string;
+    title?: string;
+    imgSrc: string;
 }
 
-export function GridItem({ children, href, title, thumbnail }: IGridItemProps) {
+export function GridItem({ children, href, title, imgSrc }: IGridItemProps) {
     <Box w="100%" align="center">
         <LinkBox cursor="pointer">
             <Image
-                src={thumbnail}
+                src={imgSrc}
                 alt={title}
                 className="grid-item-thumbnail"
                 placeholder="blur"

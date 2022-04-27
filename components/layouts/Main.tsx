@@ -24,7 +24,7 @@ export default function Main({ children, router }: IMainProps) {
 
             <Navbar path={router.asPath} />
 
-            <Container maxW="container.sm" pt={14}>
+            <Container maxW="container.lg" pt={-5}>
                 <Mountain />
                 {children}
             </Container>

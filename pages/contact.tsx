@@ -15,7 +15,7 @@ interface ContactProps extends WithRouterProps {}
 class Contact extends React.Component<ContactProps> {
     public render() {
         return (
-            <Container>
+            <Container maxW="container.lg">
                 <Heading as="h3" variant="section-title">
                     Contact
                 </Heading>
