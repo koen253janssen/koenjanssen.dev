@@ -1,9 +1,0 @@
-node_modules/
-.next/
-dist/
-npm-debug.*
-.env
-
-# macOS
-.DS_Store
-.vscode/
