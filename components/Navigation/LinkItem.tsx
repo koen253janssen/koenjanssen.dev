@@ -2,13 +2,13 @@ import NextLink from 'next/link';
 import { Link, useColorModeValue } from '@chakra-ui/react';
 import React from 'react';
 
-export interface ILinkItemProps {
-    href: any;
-    path: any;
-    target?: any;
-    children?: any;
-    active?: any;
-    inactiveColor?: any;
+interface ILinkItemProps {
+    href: string;
+    path: string | undefined;
+    target?: string | undefined;
+    children?: any | undefined;
+    active?: string | undefined;
+    inactiveColor?: string | undefined;
 }
 
 export function LinkItem(props: ILinkItemProps) {

@@ -17,7 +17,7 @@ import {
 import { HamburgerIcon } from '@chakra-ui/icons';
 import DarkModeToggleButton from '../DarkModeToggleButton';
 import React from 'react';
-import { LinkItem } from './linkItem';
+import { LinkItem } from './LinkItem';
 
 interface INavbarProps {
     path?: string;
