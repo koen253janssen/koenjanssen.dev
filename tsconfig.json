@@ -1,6 +1,6 @@
 {
     "compilerOptions": {
-        "strict": true,
+        "strict": false,
         "jsx": "preserve",
         "target": "es5",
         "lib": ["dom", "dom.iterable", "esnext"],
@@ -14,13 +14,13 @@
         "moduleResolution": "node",
         "resolveJsonModule": true,
         "isolatedModules": true
-    },
+        },
     "include": [
         "next-env.d.ts",
         "**/*.ts",
         "**/*.tsx",
         "components/emoji.js",
-        "components/Section.tsx",
+        "components/section.tsx",
         "components/paragraph.js",
         "next.config.js"
     ],

@@ -1,6 +1,7 @@
 import Image from 'next/image';
 import { Box, Text, LinkBox, LinkOverlay } from '@chakra-ui/react';
-import { IGridItemProps } from './GridItem';
+import { IGridItemProps } from './gridItem';
+// @ts-nocheck
 
 interface IPortfolioGridItemProps extends IGridItemProps {
     imgSrc: string;
@@ -17,7 +18,7 @@ export function PortfolioGridItem({
     imgSrc,
 }: IPortfolioGridItemProps) {
     return (
-        <Box w="100%" align="center">
+        <Box w="100%" textAlign={'right'}>
             <LinkBox cursor="pointer">
                 <Image
                     src={imgSrc}

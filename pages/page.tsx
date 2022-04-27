@@ -9,10 +9,10 @@ import {
     Button,
     Flex,
 } from '@chakra-ui/react';
-import Section from '../components/Section';
+import Section from '../components/section';
 import Paragraph from '../components/paragraph';
-import { EducationItem } from '../components/Education';
-import { ExperienceItem } from '../components/Experience';
+import { EducationItem } from '../components/education';
+import { ExperienceItem } from '../components/experience';
 import { EmailIcon } from '@chakra-ui/icons';
 import { FaGithub, FaLinkedin, FaWhatsapp } from 'react-icons/fa';
 import { NextRouter, withRouter } from 'next/router';
@@ -27,7 +27,13 @@ class Page extends React.Component<PageProps> {
     public render() {
         return (
             <Container maxW="container.lg">
-                <Box borderRadius="lg" bg="grey" p={3} mb={6} align="center">
+                <Box
+                    borderRadius="lg"
+                    bg="grey"
+                    p={3}
+                    mb={6}
+                    alignContent="center"
+                >
                     Hello, I&apos;m a software engineering student based in the
                     Netherlands!
                 </Box>
@@ -37,7 +43,7 @@ class Page extends React.Component<PageProps> {
                         flexShrink={0}
                         mt={{ base: 4, md: 0 }}
                         ml={{ md: 0 }}
-                        align="center"
+                        alignContent="center"
                     >
                         <Image
                             maxWidth="96px"
@@ -72,7 +78,7 @@ class Page extends React.Component<PageProps> {
                         in my free time.
                     </Paragraph>
                     <Flex>
-                        <Box align="center" my={4}>
+                        <Box alignContent="center" my={4}>
                             <Stack direction={['column', 'row']} spacing={4}>
                                 <Button
                                     leftIcon={<EmailIcon />}

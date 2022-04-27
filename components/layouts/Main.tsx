@@ -1,5 +1,5 @@
 import Head from 'next/head';
-import Navbar from '../Navigation/Navbar';
+import Navbar from '../navigation/navbar';
 import { Box, Container } from '@chakra-ui/react';
 import Mountain from '../mountain';
 import { ReactElement } from 'react';

@@ -1,5 +1,4 @@
 import * as React from 'react';
-
 import { Container, Heading, SimpleGrid } from '@chakra-ui/react';
 
 export default class Posts extends React.Component {

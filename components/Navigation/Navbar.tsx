@@ -1,4 +1,4 @@
-import Logo from '../Logo';
+import Logo from '../logo';
 import NextLink from 'next/link';
 import {
     Container,
@@ -15,9 +15,9 @@ import {
     useColorModeValue,
 } from '@chakra-ui/react';
 import { HamburgerIcon } from '@chakra-ui/icons';
-import DarkModeToggleButton from '../DarkModeToggleButton';
+import DarkModeToggleButton from '../darkmodetogglebutton';
 import React from 'react';
-import { LinkItem } from './LinkItem';
+import { LinkItem } from './linkitem';
 
 interface INavbarProps {
     path?: string;
@@ -39,9 +39,9 @@ export default function Navbar(props: INavbarProps) {
                 display="flex"
                 p={2}
                 maxW="980px"
-                wrap="wrap"
-                align="center"
-                justify="space-between"
+                flexWrap="wrap"
+                textAlign="center"
+                justifyContent="space-between"
             >
                 <Flex align="center" mr={5}>
                     <Heading as="h1" size="lg" letterSpacing={'tighter'}>
@@ -71,7 +71,7 @@ export default function Navbar(props: INavbarProps) {
                     </LinkItem>
                 </Stack>
 
-                <Box flex={1} align="right">
+                <Box flex={1} textAlign={'right'}>
                     <DarkModeToggleButton />
                     <Box ml={2} display={{ base: 'inline-block', md: 'none' }}>
                         <Menu>

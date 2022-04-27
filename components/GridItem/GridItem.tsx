@@ -1,6 +1,7 @@
 import Image from 'next/image';
 import { Box, Text, LinkBox, LinkOverlay } from '@chakra-ui/react';
 import { Global } from '@emotion/react';
+// @ts-nocheck
 
 export interface IGridItemProps {
     children: React.ReactNode;
@@ -11,7 +12,7 @@ export interface IGridItemProps {
 }
 
 export function GridItem({ children, href, title, imgSrc }: IGridItemProps) {
-    <Box w="100%" align="center">
+    <Box w="100%" alignItems={'center'} justifyContent={'center'}>
         <LinkBox cursor="pointer">
             <Image
                 src={imgSrc}

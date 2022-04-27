@@ -4,14 +4,14 @@ import { HStack } from '@chakra-ui/react';
 import Paragraph from './paragraph';
 
 interface IExperienceProps {
-    title: string;
     imgSrc: string;
-    companyName: string;
+    title: string;
     jobType: string;
-    location: string;
+    companyName: string;
     startDate: string;
     endDate: string;
-    description: string;
+    location?: string;
+    description?: string;
 }
 
 export const ExperienceItem = (props: IExperienceProps) => {
