@@ -28,11 +28,11 @@ class Page extends React.Component<PageProps> {
         return (
             <Container maxW="container.lg">
                 <Box
-                    borderRadius="lg"
+                    borderRadius="sm"
                     bg="grey"
                     p={3}
                     mb={6}
-                    alignContent="center"
+                    textAlign="center"
                 >
                     Hello, I&apos;m a software engineering student based in the
                     Netherlands!
