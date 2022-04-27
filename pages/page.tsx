@@ -9,10 +9,10 @@ import {
     Button,
     Flex,
 } from '@chakra-ui/react';
-import Section from '../components/section';
+import Section from '../components/Section';
 import Paragraph from '../components/paragraph';
-import { EducationItem } from '../components/education';
-import { ExperienceItem } from '../components/experience';
+import { EducationItem } from '../components/Education';
+import { ExperienceItem } from '../components/Experience';
 import { EmailIcon } from '@chakra-ui/icons';
 import { FaGithub, FaLinkedin, FaWhatsapp } from 'react-icons/fa';
 import { NextRouter, withRouter } from 'next/router';

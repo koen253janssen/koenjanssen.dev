@@ -17,7 +17,7 @@ const EmojiBox = styled.span`
     }
 `;
 
-const Logo = () => {
+export default function Logo() {
     return (
         <Link href="/">
             <a>
@@ -37,6 +37,4 @@ const Logo = () => {
             </a>
         </Link>
     );
-};
-
-export default Logo;
+}

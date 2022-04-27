@@ -1,4 +1,4 @@
-import Logo from './logo';
+import Logo from '../logo';
 import NextLink from 'next/link';
 import {
     Container,
@@ -15,29 +15,16 @@ import {
     useColorModeValue,
 } from '@chakra-ui/react';
 import { HamburgerIcon } from '@chakra-ui/icons';
-import DarkModeToggleButton from './darkmode-toggle-button';
+import DarkModeToggleButton from '../DarkModeToggleButton';
+import React from 'react';
+import { LinkItem } from './linkItem';
 
-const LinkItem = ({ href, path, _target, children, ...props }) => {
-    const active = path === href;
-    const inactiveColor = useColorModeValue('gray200', 'whiteAlpha.900');
-    return (
-        <NextLink href={href} passHref>
-            <Link
-                p={2}
-                bg={active ? 'grassTeal' : undefined}
-                color={active ? '#202023' : inactiveColor}
-                _target={_target}
-                {...props}
-            >
-                {children}
-            </Link>
-        </NextLink>
-    );
-};
+interface INavbarProps {
+    path?: string;
+}
 
-const Navbar = (props) => {
+export default function Navbar(props: INavbarProps) {
     const { path } = props;
-
     return (
         <Box
             position="fixed"
@@ -51,7 +38,7 @@ const Navbar = (props) => {
             <Container
                 display="flex"
                 p={2}
-                maxW="container.sm"
+                maxW="container.ld"
                 wrap="wrap"
                 align="center"
                 justify="space-between"
@@ -117,6 +104,4 @@ const Navbar = (props) => {
             </Container>
         </Box>
     );
-};
-
-export default Navbar;
+}

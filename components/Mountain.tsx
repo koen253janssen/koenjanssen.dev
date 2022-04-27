@@ -4,7 +4,7 @@ const HeaderBox = styled.span`
     padding: 15px;
 `;
 
-const Mountain = () => {
+export default function Mountain() {
     return (
         <HeaderBox>
             <div
@@ -18,6 +18,4 @@ const Mountain = () => {
             ></div>
         </HeaderBox>
     );
-};
-
-export default Mountain;
+}

@@ -1,7 +1,7 @@
 import { extendTheme } from '@chakra-ui/react';
 import { mode } from '@chakra-ui/theme-tools';
 
-const styles = {
+const Styles = {
     global: (props) => ({
         body: {
             bg: mode('f027db', '#202023')(props),
@@ -9,7 +9,7 @@ const styles = {
     }),
 };
 
-const components = {
+const Components = {
     Heading: {
         variants: {
             'section-title': {
@@ -31,25 +31,25 @@ const components = {
     },
 };
 
-const fonts = {
+const Fonts = {
     heading: "'Space Mono'",
 };
 
-const colors = {
+const Colors = {
     glassTeal: '#88ccca',
 };
 
-const config = {
+const Config = {
     initialColorMode: 'dark',
     useSystemColorMode: true,
 };
 
-const theme = extendTheme({
-    config,
-    styles,
-    components,
-    colors,
-    fonts,
+const Theme = extendTheme({
+    config: Config,
+    styles: Styles,
+    components: Components,
+    colors: Colors,
+    fonts: Fonts,
 });
 
-export default theme;
+export default Theme;

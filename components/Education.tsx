@@ -2,7 +2,16 @@ import { Box } from '@chakra-ui/react';
 import { Image } from '@chakra-ui/react';
 import { HStack } from '@chakra-ui/react';
 
-export const EducationItem = (props) => {
+interface IEducationItemProps {
+    imgSrc: string;
+    institute: string;
+    degree: string;
+    fieldOfStudy: string;
+    startDate: string;
+    endDate: string;
+}
+
+export function EducationItem(props: IEducationItemProps) {
     return (
         <Box style={{ padding: '12px' }}>
             <HStack spacing="24px">
@@ -25,4 +34,4 @@ export const EducationItem = (props) => {
             </HStack>
         </Box>
     );
-};
+}

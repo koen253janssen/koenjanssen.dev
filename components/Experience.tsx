@@ -3,7 +3,18 @@ import { Image } from '@chakra-ui/react';
 import { HStack } from '@chakra-ui/react';
 import Paragraph from './paragraph';
 
-export const ExperienceItem = (props) => {
+interface IExperienceProps {
+    title: string;
+    imgSrc: string;
+    companyName: string;
+    jobType: string;
+    location: string;
+    startDate: string;
+    endDate: string;
+    description: string;
+}
+
+export const ExperienceItem = (props: IExperienceProps) => {
     return (
         <Box style={{ padding: '12px' }}>
             <HStack

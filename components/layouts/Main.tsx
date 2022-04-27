@@ -1,9 +1,15 @@
 import Head from 'next/head';
-import Navbar from '../navbar.js';
+import Navbar from '../Navigation/Navbar';
 import { Box, Container } from '@chakra-ui/react';
-import Mountain from '../mountain.js';
+import Mountain from '../mountain';
+import { ReactElement } from 'react';
 
-const Main = ({ children, router }) => {
+interface IMainProps {
+    children: ReactElement;
+    router: any;
+}
+
+export default function Main({ children, router }: IMainProps) {
     return (
         <Box as="main" pb={8}>
             <Head>
@@ -24,6 +30,4 @@ const Main = ({ children, router }) => {
             </Container>
         </Box>
     );
-};
-
-export default Main;
+}
