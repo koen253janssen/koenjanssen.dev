@@ -31,7 +31,7 @@ class Contact extends React.Component<ContactProps> {
                             variant="solid"
                             onClick={() =>
                                 this.props.router.push(
-                                    'mailto:mail@koenjanssen.xyz'
+                                    'mailto:mail@koenjanssen.dev'
                                 )
                             }
                         >

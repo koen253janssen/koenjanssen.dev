@@ -86,7 +86,7 @@ class Page extends React.Component<PageProps> {
                                     variant="solid"
                                     onClick={() =>
                                         this.props.router.push(
-                                            'mailto:mail@koenjanssen.xyz'
+                                            'mailto:mail@koenjanssen.dev'
                                         )
                                     }
                                 >
@@ -98,7 +98,7 @@ class Page extends React.Component<PageProps> {
                                     leftIcon={<FaGithub />}
                                     onClick={() =>
                                         this.props.router.push(
-                                            'https://github.com/koenjanssenxyz'
+                                            'https://github.com/koenjanssendev'
                                         )
                                     }
                                 >
@@ -109,7 +109,7 @@ class Page extends React.Component<PageProps> {
                                     leftIcon={<FaLinkedin />}
                                     onClick={() =>
                                         this.props.router.push(
-                                            'https://www.linkedin.com/in/koenjanssenxyz/'
+                                            'https://www.linkedin.com/in/koenjanssendev/'
                                         )
                                     }
                                 >
