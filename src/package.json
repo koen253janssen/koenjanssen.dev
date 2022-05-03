@@ -10,7 +10,7 @@
         "lint": "next lint"
     },
     "keywords": [],
-    "author": "Koen Janssen<mail@koenjanssen.xyz>",
+    "author": "Koen Janssen<mail@koenjanssen.dev>",
     "license": "MIT",
     "dependencies": {
         "@chakra-ui/icons": "^1.1.1",
