@@ -98,7 +98,7 @@ class Page extends React.Component<PageProps> {
                                     leftIcon={<FaGithub />}
                                     onClick={() =>
                                         this.props.router.push(
-                                            'https://github.com/koenjanssendev'
+                                            'https://github.com/koen253janssen'
                                         )
                                     }
                                 >
@@ -109,7 +109,7 @@ class Page extends React.Component<PageProps> {
                                     leftIcon={<FaLinkedin />}
                                     onClick={() =>
                                         this.props.router.push(
-                                            'https://www.linkedin.com/in/koenjanssendev/'
+                                            'https://www.linkedin.com/in/koen253janssen/'
                                         )
                                     }
                                 >
