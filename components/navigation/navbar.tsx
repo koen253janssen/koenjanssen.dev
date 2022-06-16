@@ -60,8 +60,8 @@ export default function Navbar(props: INavbarProps) {
                     <LinkItem href="/portfolio" path={path}>
                         Portfolio
                     </LinkItem>
-                    <LinkItem href="/posts" path={path}>
-                        Posts
+                    <LinkItem href="/blog" path={path}>
+                        Blog
                     </LinkItem>
                     <LinkItem href="/about" path={path}>
                         About
@@ -88,8 +88,8 @@ export default function Navbar(props: INavbarProps) {
                                 <NextLink href="/portfolio" passHref>
                                     <MenuItem as={Link}>Portfolio</MenuItem>
                                 </NextLink>
-                                <NextLink href="/posts" passHref>
-                                    <MenuItem as={Link}>Posts</MenuItem>
+                                <NextLink href="/blog" passHref>
+                                    <MenuItem as={Link}>Blog</MenuItem>
                                 </NextLink>
                                 <NextLink href="/about" passHref>
                                     <MenuItem as={Link}>About</MenuItem>
